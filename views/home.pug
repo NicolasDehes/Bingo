@@ -1,0 +1,32 @@
+include ./inc/header
+
+.container.mt-5
+    .row
+        .col-md-3
+            .card
+                .card-body
+                    h5.card-title User Name
+                    h6.card-subtitle.mb-2.text-muted @username
+                    p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna euismod.
+        .col-md-6
+            .card
+                .card-body
+                    h5.card-title What's happening?
+                    include tweets/newTweet
+            .card.mt-3
+                .card-body
+                    h5.card-title Recent Tweets
+                    ul.list-group
+                        li.list-group-item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna euismod.
+                        li.list-group-item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna euismod.
+                        li.list-group-item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna euismod.
+        .col-md-3
+            .card
+                .card-body
+                    h5.card-title Trending
+                    ul.list-group
+                        li.list-group-item #Bootstrap
+                        li.list-group-item #Twitter
+                        li.list-group-item #WebDevelopment
+
+include ./inc/footer
